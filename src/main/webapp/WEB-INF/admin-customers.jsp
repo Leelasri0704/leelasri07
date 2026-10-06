@@ -111,7 +111,7 @@
 
     </table>
 
-    <a href="../admin.jsp" class="back">
+    <a href="admin.jsp" class="back">
         Back to Dashboard
     </a>
 

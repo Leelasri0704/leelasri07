@@ -99,7 +99,7 @@
         <a href="admin-orders" class="btn">
             Order Management
         </a>
-
+        <a href="admin-reviews" class="btn">Review Management</a>
         <!-- Reports -->
         <a href="admin-reports" class="btn">
             Reports

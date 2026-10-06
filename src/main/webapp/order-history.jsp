@@ -2,11 +2,15 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
+
     <meta charset="UTF-8">
+
     <title>Shopping Mart - Order History</title>
 
     <style>
+
         body {
             font-family: Arial, sans-serif;
             background: #f2f2f2;
@@ -18,7 +22,7 @@
         }
 
         table {
-            width: 85%;
+            width: 90%;
             margin: 30px auto;
             border-collapse: collapse;
             background: white;
@@ -40,6 +44,19 @@
             font-weight: bold;
         }
 
+        .review-btn {
+            display: inline-block;
+            padding: 8px 15px;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .review-btn:hover {
+            background: #444;
+        }
+
         .btn {
             display: block;
             width: 180px;
@@ -51,7 +68,9 @@
             text-decoration: none;
             border-radius: 5px;
         }
+
     </style>
+
 </head>
 
 <body>
@@ -72,6 +91,7 @@
         <th>Total Amount</th>
         <th>Order Date</th>
         <th>Status</th>
+        <th>Review</th>
     </tr>
 
 <%
@@ -98,6 +118,12 @@
             <%= orders.getString("status") %>
         </td>
 
+        <td>
+            <a href="review.jsp" class="review-btn">
+                Write Review
+            </a>
+        </td>
+
     </tr>
 
 <%
@@ -107,7 +133,7 @@
 %>
 
     <tr>
-        <td colspan="4">
+        <td colspan="5">
             No orders found.
         </td>
     </tr>
@@ -123,4 +149,5 @@
 </a>
 
 </body>
+
 </html>
